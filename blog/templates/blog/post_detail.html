@@ -12,7 +12,7 @@
         {% endif %}
 
         {% if user.pk == post.author_id %}
-            <a class="btn btn-danger" href="{% url 'post_delete' pk=post.pk %}"><span class="glyphicon glyphicon-erase"></span></a>
+            <a class="btn btn-danger" href="{% url 'post_delete' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
         {% endif %}
 
         <h1>{{ post.title }}</h1>
